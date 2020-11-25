@@ -1,0 +1,288 @@
+
+#front-body{
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:black;
+}
+#bright{
+height:100%;
+width:100%;
+position:absolute;  
+background:radial-gradient(#333,#000);
+}
+
+
+#litir{
+
+}
+#fronth1{
+	padding-top: 2em;
+    font-size: 70px;
+    text-align:center;
+    color:#fff;
+    font-family: 'Iceberg', cursive;
+    
+    
+}
+
+article{
+ 
+
+}
+
+h3{
+	
+    font-family: 'Iceberg', cursive;
+    
+    
+}
+#head2{
+  	grid-area: Haus;
+
+} 
+
+#head2 h1{
+  	font-size: 70px;
+    text-align:center;
+    color:black;
+    font-family: 'Iceberg', cursive;
+
+} 
+
+#section1{
+  	grid-area: Seca;
+  	
+ }
+#section2{
+  	grid-area: Secb;
+  	
+ }
+ #section3{
+  	grid-area: Secc;
+  	
+ }
+
+footer{
+  	grid-area: Fotur;
+  	
+ } 
+
+ a{
+	font-family: 'Sura', serif;
+	
+  
+}
+
+p{
+	font-family: 'Cinzel Decorative', cursive;
+	text-align: justify;
+
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.miðjadiv{
+    padding: 0.5em;
+    
+}
+
+main{
+	padding: 1em;
+
+    
+    
+}
+
+
+#front-button{
+    
+    
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:#fff;
+    
+  
+}
+
+ #front-button:hover {
+   background-color: #ffffff;
+   color: black;
+ 
+  
+}
+
+
+#pillars{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.pillars div{
+position:absolute ;
+display:block ;
+
+}
+
+
+.pillars div:nth-child(1){
+    left:10%;
+	animation:fall 29s linear infinite ;
+    animation-delay:-14s;
+
+}
+
+.pillars div:nth-child(2){
+    left:30%; 
+    animation:fall 40s linear infinite ;
+    animation-delay:-3s;
+}
+.pillars div:nth-child(3){
+    left:40%; 
+    animation:fall 45s linear infinite ;
+    animation-delay:-9s;
+    
+}
+.pillars div:nth-child(4){
+    left:50%; 
+   animation:fall 28s linear infinite ; 
+   animation-delay:-10s;
+}
+.pillars div:nth-child(5){
+    left:60%; 
+    animation:fall 35s linear infinite ;
+    animation-delay:-1s;
+}
+.pillars div:nth-child(6){
+    left:70%; 
+    animation:fall 39s linear infinite ;
+    animation-delay:-14s;
+}
+.pillars div:nth-child(7){
+    left:80%; 
+    animation:fall 26s linear infinite ;
+    animation-delay:-20s;
+
+    
+}
+
+
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+@-webkit-keyframes anti-rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(-359deg);
+		}
+}
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+
+    }
+    }
+
+#pillar1{
+-webkit-animation: anti-rotation 300s infinite linear;
+} 
+
+#pillar2{
+-webkit-animation: anti-rotation 200s infinite linear;
+}
+#pillar3{
+-webkit-animation: rotation 300s infinite linear;
+}
+#pillar4{
+-webkit-animation: rotation 200s infinite linear;
+}
+#pillar5{
+-webkit-animation: anti-rotation 300s infinite linear;
+}
+#pillar6{
+-webkit-animation: rotation 200s infinite linear;
+}
+#pillar7{
+    -webkit-animation: anti-rotation 300s infinite linear;
+
+}
+  
+
+
+
+body{ 	
+background: radial-gradient( #5c4949, #5c4949, #694242, #663131, #801b1b);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 50s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+
+
+@media screen and (min-width: 60em){
+
+
+
+
+ .wrapper{
+  	display: grid;
+  	padding: 1em;
+  	grid-gap: 2em;
+  	grid-template-areas: 
+  	
+  	"Seca Seca Seca Secb Secc"
+  	;
+  	
+ }  
+  
+
+  
+}
