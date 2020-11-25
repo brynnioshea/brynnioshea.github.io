@@ -175,7 +175,7 @@ nav ul li a {
 
 header{
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -384,6 +384,10 @@ ol li{
 
 
 @media screen and (min-width: 48em){
+	
+	
+	
+  	header{font-size: 60px;}
 
 
 
