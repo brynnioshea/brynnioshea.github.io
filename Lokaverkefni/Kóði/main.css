@@ -1,0 +1,421 @@
+
+ /*Þegar þú scrollar niður í vefsíðunni á þetta að gera það betra?, ég sé engann mun*/ 
+html{
+	scroll-behavior: smooth;
+}
+
+ /*Gradient backround af html skránni, viðeigandi litir, notar 3 mismunandi animation*/ 
+#bahamas-html{
+	background: linear-gradient(98deg, #abf5ef, #82fff5, #77ebfc, #5ab9e6, #77ebfc, #82fff5, #abf5ef, #fcfba7, #fafa75, #fcfba7);
+	background-size: 1000% 200%;
+	-webkit-animation: AnimationName 400s ease infinite;
+	-moz-animation: AnimationName 400s ease infinite;
+	animation: AnimationName 400s ease infinite;
+}
+/*Gradient backround af html skránni, viðeigandi litir, notar 3 mismunandi animation*/ 
+#amazon-html{
+	background: linear-gradient(98deg, #97c947, #5fb835, #39a324, #128022, #056112);
+	background-size: 1000% 200%;
+	-webkit-animation: AnimationName 400s ease infinite;
+	-moz-animation: AnimationName 400s ease infinite;
+	animation: AnimationName 400s ease infinite;
+}
+
+/*Gradient backround af html skránni, viðeigandi litir, notar 3 mismunandi animation*/ 
+#alps-html{
+	background: linear-gradient(98deg, #abf5ef, #82fff5, #77ebfc, #5ab9e6, #77ebfc, #82fff5, #abf5ef, #babec2, #8c8e91, #babec2);
+	background-size: 1000% 200%;
+	-webkit-animation: AnimationName 400s ease infinite;
+	-moz-animation: AnimationName 400s ease infinite;
+	animation: AnimationName 400s ease infinite;
+}
+
+	
+body{
+	margin:0;
+}
+
+
+/*Kóði um efsta og fyrsta navigation hnappana og staðsetningu*/ 
+#nav1{
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+#nav1 ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #ccc;
+}
+
+#nav1 a{
+	display: block;
+	border: 1px solid #444;
+	padding: 1em;
+	color: #444;
+	text-decoration: none;
+}
+
+/*kóðinn um útlitið á hnappanum af efsta navigation þegar það ver í minnstu skjástærð*/ 
+.btn-menu{
+	border: 1px solid #444;
+	padding: 1em;
+	text-align: center;
+	background-color: #999;
+}
+
+
+
+/*Lætur textann í header fara í miðjuna*/ 
+header{
+	text-align: center;
+	font-family: 'Monoton', cursive;	
+	font-size: 50px;
+}
+
+/*Segir til um stærð á letri og leturgerð*/ 
+#home-body header{
+	font-family: 'Monoton', cursive;	
+	font-size: 50px;
+}
+/*Segir til um stærð á letri og leturgerð, breytir þannig er bara ein bakrunsmynd sem teygir sig yfir header element-ið, miðjar líka myndina*/ 
+#amazon-body header{
+	font-family: 'Tangerine';
+	font-size: 70px;
+	background-image: url(../Myndir/amazon/front/forest.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 2em;
+}
+
+/*Segir til um stærð á letri og leturgerð, breytir þannig er bara ein bakrunsmynd sem teygir sig yfir header element-ið, miðjar líka myndina*/
+#bahamas-body header{
+	font-family: 'Merienda', cursive;	
+	font-size: 40px;
+	background-image: url(../Myndir/bahamas/front/water-3180041__480.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 3em;
+}
+
+/*Segir til um stærð á letri og leturgerð, breytir þannig er bara ein bakrunsmynd sem teygir sig yfir header element-ið, miðjar líka myndina*/
+#alps-body header{
+	font-family: 'Bungee Inline', cursive;	
+	font-size: 40px;
+	background-image: url(../Myndir/alps/front/mountain-range-2116871__480.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 2.5em;
+
+}
+
+/*Kóði um seinni navigation hnappana og staðsetningu*/ 
+#nav2{
+	padding-top: 2em;
+}
+
+#sero {
+	font-size: 0px;
+  	list-style: none;
+	text-align: center;	
+}
+
+#sero li {
+  font-size: 17px;
+  background: slategrey;
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+#sero a {
+	text-decoration: none;	
+}
+
+#sero li:hover {
+	background-color: red;
+}
+
+#sero a:hover, #sero a:active {
+	color: blue;
+}
+
+/*Segir til um stærð á letri og leturgerð, breytir texta svo að hann sé jafnur á allar línur, bætir við "línu" á botn á hverju article*/
+article{
+	padding: 1em;
+	border-bottom: 1px solid gray;
+	text-align: justify;
+	font-size: 19px;
+	font-family: 'Electrolize', sans-serif;
+	
+}
+
+/*Segir til um stærð á letri og leturgerð á fyrirsögnunum yfir article á amazon síðu*/
+#amazon-body h2{
+	font-family: 'Tangerine', cursive;
+	font-size: 45px;
+}
+
+/*Segir til um leturgerð á fyrirsögnunum yfir article á bahamas síðu*/
+#bahamas-body h2 {
+	font-family: 'Merienda', cursive;	
+}
+
+/*Segir til um leturgerð á fyrirsögnunum yfir article á alps síðu*/
+#alps-body h2{
+	font-family: 'Bungee Inline', cursive;		
+}
+
+
+/*gerir svo að allar myndir breytast eftir skjástærð*/
+figure{
+    margin: 0;
+    display: inline-block;  
+    width: 100%;
+}
+
+#alps-body img, #bahamas-body img, #amazon-body img{
+    display: block;
+    width: 100%;
+}
+
+/* lagfæringar við translate hnappan, þarf að vera undir efri img kóða til að myndir sjást ekki*/ 
+
+#google_translate_element{
+	margin: 0;
+	border: none;
+}
+
+#google_translate_element img{
+	display: none;
+
+}
+
+/*Kóði um allt engt efsni svo það scalar með skjástærð*/ 
+iframe{
+    display: block;
+    width: 100%;
+}
+
+/*kóði fyrir sliderinn*/
+#Slider{
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;    
+    position: relative;
+    font-size: 0;
+    border: 1px solid black;    
+}
+
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#flower-left{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 10%;
+    cursor: pointer;
+}
+
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#flower-right{
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    width: 10%;
+    cursor: pointer;
+}
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#spiral-left{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 9%;
+    cursor: pointer;
+}
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#spiral-right{
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    width: 9%;
+    cursor: pointer;
+}
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#climb-left{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 7%;
+    cursor: pointer;
+}
+/*segir til um stærð og staðsetningu á hreyfihnöppum fyrir sliderinn*/
+#climb-right{
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    width: 7%;
+    cursor: pointer;
+}
+
+/*kóði fyrir footer-a, basic*/
+footer{
+	padding: 1em;
+	margin: 3em;
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+/*Kóði um útlit á footernum í heimasíðu skjalinu*/ 
+#home-html footer{
+    text-align: left;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/*kóði fyrir hnappin sem leyfir notanda að leita beint upp á síðu, segir til um staðsetningu og útlit*/
+.btn-top{
+	background-color: #bbbbbbc0;
+	display: block;
+	padding: 1em 0;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border:1px solid black;
+}
+
+/* animation hreyfingar fyrir gradient bakrunna*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+
+
+@media screen and (min-width: 48em){
+
+
+
+	/*lætur efsta nav hnappan hverfa*/
+	.btn-menu{
+		display: none;
+	}
+
+	/*Kóði sem segir um hvernig navið á að vera í stærri skjásrærðum*/
+	#nav1 {
+		display: block;
+		top: 0;
+		position: fixed;
+		transition: opacity 200ms;
+	}
+
+	#nav1 li{
+		display: inline-block;
+		padding: 0 1em;
+	}
+
+	#nav1 a{
+		border: none;
+		background-color: #888;
+		padding: 0.5em;
+	}
+
+	.navscroll{
+		opacity: 0.5;
+	}
+
+	/*staðsetninga breyting á tveimur headerum í stærri skjástærðum*/
+	#home-body header{
+		padding: 2em;
+	}
+
+	#alps-body header{
+		padding: 2em;
+	}
+	/*kóði fyrir hnappin sem leyfir notanda að leita beint upp á síðu, segir til um staðsetningu, nú í hægra neðra horni*/
+	.btn-top{
+		width: 100px;
+		bottom: 2em;
+		right: 2em;
+		text-align: center;
+		padding: 0.2em ;
+	}
+
+
+
+}
+
+@media screen and (min-width: 60em){
+
+
+	/*staðsetninga breyting á tveimur headerum í stærri skjástærðum*/
+	header{
+		padding-top: 3em;
+	}
+
+	#alps-body header{
+		padding: 3em;
+	}
+
+	article{
+		margin: 2em;
+	}
+
+	
+	/*Grid kerfi fyrir hver article, hvert article er með sér grid svo það mætti breyta því ef það vildi*/
+	.article1{
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em;
+	}
+	
+	 
+	.article2{
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	.article3{
+		display: grid;
+		grid-template-rows: auto auto ;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	/*grid kóði sem segir að fyrirsögnin af hverri article grein egi að vera yfir öllum textanum*/
+	.article1 h2{
+		grid-column: 1 / 3; 
+	}
+
+	.article2 h2{
+		grid-column: 1 / 3; 
+	}
+
+	.article3 h2{
+		grid-column: 1 / 3; 
+	}
+
+}

@@ -1,0 +1,268 @@
+
+/*Kóði um neðsta linkinn*/
+#neoncontainer-amazon{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+/*kóði um efnið í linkinum*/
+#neoncontainer-amazon a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color:#0c6624 ;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: #c90606;
+
+
+}
+
+/*lætur liturinn af kassanum breytast eftir tíma*/
+#neoncontainer-amazon a:hover{
+  color: #c90606;
+  background: #0c6624;  
+  box-shadow: 0 0 10px #0c6624, 0 0 40px #0c6624, 0 0 80px #0c6624;
+  transition-delay: 1s;
+}
+
+/*Kóði sem segir til um línurnar sem ferðast hornrétt um enda linksins*/
+#neoncontainer-amazon a span{
+  position: absolute;
+  display: block;
+}
+#neoncontainer-amazon a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#0c6624);
+}
+#neoncontainer-amazon a:hover span:nth-child(1) { 
+  left: 100%;
+  transition: 1s;
+}
+#neoncontainer-amazon a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#0c6624);
+}
+#neoncontainer-amazon a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#neoncontainer-amazon a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#0c6624);
+}
+#neoncontainer-amazon a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#neoncontainer-amazon a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#0c6624);
+}
+#neoncontainer-amazon a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+/*Kóði um neðsta linkinn*/
+#neoncontainer-bahamas{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+
+/*kóði um efnið í linkinum*/
+#neoncontainer-bahamas a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fced77;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: #22d4c5;
+
+
+}
+
+/*lætur liturinn af kassanum breytast eftir tíma*/
+#neoncontainer-bahamas a:hover{
+  color: #22d4c5;
+  background: #fced77;  
+  box-shadow: 0 0 10px #fced77, 0 0 40px #fced77, 0 0 80px #fced77;
+  transition-delay: 1s;
+}
+
+/*Kóði sem segir til um línurnar sem ferðast hornrétt um enda linksins*/
+#neoncontainer-bahamas a span{
+  position: absolute;
+  display: block;
+}
+#neoncontainer-bahamas a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#fced77);
+}
+#neoncontainer-bahamas a:hover span:nth-child(1) { 
+  left: 100%;
+  transition: 1s;
+}
+#neoncontainer-bahamas a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#fced77);
+}
+#neoncontainer-bahamas a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#neoncontainer-bahamas a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#fced77);
+}
+#neoncontainer-bahamas a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#neoncontainer-bahamas a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#fced77);
+}
+#neoncontainer-bahamas a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+/*Kóði um neðsta linkinn*/
+#neoncontainer-alps{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+/*kóði um efnið í linkinum*/
+#neoncontainer-alps a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: #c7c7c7;
+}
+
+/*lætur liturinn af kassanum breytast eftir tíma*/
+#neoncontainer-alps a:hover{
+  color: #c7c7c7;
+  background: #2196f3;  
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+
+/*Kóði sem segir til um línurnar sem ferðast hornrétt um enda linksins*/
+#neoncontainer-alps a span{
+  position: absolute;
+  display: block;
+}
+#neoncontainer-alps a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2.5px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+#neoncontainer-alps a:hover span:nth-child(1) { 
+  left: 100%;
+  transition: 1s;
+}
+#neoncontainer-alps a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2.5px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+#neoncontainer-alps a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#neoncontainer-alps a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2.5px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+#neoncontainer-alps a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#neoncontainer-alps a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2.5px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+}
+#neoncontainer-alps a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US" id="home-html">
+	<head>
+		<!-- gerir kleyft að setja íslenska stafi, komment kemur ekki fyrir aftur--> 
+		<meta charset="UTF-8">
+		<!-- textinn sem byrtist á skjá flipanum efst , komment kemur ekki fyrir aftur--> 
+		<title>Lokaverkefni</title>
+		<!-- gerir kleyft að nota veiwports eða responsive web design, komment kemur ekki fyrir aftur--> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- tvær css skránnar sem breyta lögun, útliti og efni á síðunnni þegar hún er keyrð, komment kemur ekki fyrir aftur--> 
+    	<link rel="stylesheet" href="main.css">
+    	<link rel="stylesheet" href="neon.css">
+    	<!-- font val fyrir alla header-a, article, og fyrirsagnir, ekki þó form-ið, komment kemur ekki fyrir aftur--> 
+    	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Electrolize&family=Merienda&family=Monoton&family=Tangerine&display=swap" rel="stylesheet">
+	</head>
+	<body id="home-body">
+
+		<!-- Tónlist á heimasíðu, róleg en samt áhugaverð, er ekki hægt að slökkva, spilar sjálkrafa, spilar endalaust, hlustaði á þetta meðan ég var að gera komment og lagfæra kóðann, mjög róandi--> 
+		<audio controls autoplay hidden loop>
+  			<source src="../Tónlist/Swoof - Waves.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+
+		<!-- hnappurinn og icon-ið sem birtist fyrir nav-ið þegar skástærð minnkar í mobile, komment kemur ekki fyrir aftur--> 
+		<div class="btn-menu">Menu &#9776;</div>
+
+
+		<!-- Nav kerfið, hver hnappur fer á mismunandi undirsíðu og aftur á heimasíðu, translate hnappur fylgir með þó virkar af google translate sem er ekki besti þýðinga vefslóðin, komment kemur ekki fyrir aftur--> 
+		<nav id="nav1">
+			<ul>
+				<li><a href="#"> Home</a></li>
+				<li><a href="index amazon.html"> Amazon</a></li>
+				<li><a href="index bahamas.html"> Bahamas</a></li>
+				<li><a href="index alps.html"> The Alps</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><div id="google_translate_element"></div></li>
+			</ul>
+		</nav>
+
+
+		<main>
+			<!-- Aðal fyrir sögn--> 
+			<header>
+				Lokaverkefni 
+			</header>
+
+			
+			<!--intor article á síðunni --> 
+			<article>
+				<p>Welcome web-surfer. This site is for promoting various vacation locations for tourists and travel agencies. So take your time and peruse through the text and if you feel inclined, answer the questionnaire below to help us better understand consumer needs and expectations.</p>
+			</article>
+
+			<!-- Stutt form sem spyr notanda um venjulegar upplýsingar og ferða valkosti--> 
+			<form id="Form1" name="Form1" class="Form1">
+				<fieldset>
+					<legend>Questionnaire</legend>
+
+					<br>
+
+					<label>Name: </label>
+					<br>
+					<input type="text">
+
+					<br><br>
+			
+					<label>Email: </label>
+					<br>
+					<input type="email"  >
+
+					<br><br>
+
+					<label>Favorite country traveled to: </label>
+					<br>
+					<input type="text">
+
+					<br><br>
+
+					<label> Your favorite vacation setting </label>
+					<br>
+					<select>
+						<option> Pick a setting</option>
+						<option> Relaxing </option>
+						<option> Adventurous</option>
+						<option> Eye opening</option>
+						<option> Wild</option>
+						<option> Family fun</option>
+						<option> Vacation for one</option>
+						<option> Couples retreat</option>	
+					</select>
+
+					<br><br>
+				
+					<label> Is there anything more you would like to add to better help us convey vacation destiantion better? </label>
+					<br>
+					<textarea rows="15" cols="50" placeholder="Write here..." id="at2" class="at2"></textarea>
+				
+					<br><br>
+
+					<label> Would you like to recive email notifacations of latest articles and travel locations? </label>
+					<br>
+					<input type="radio" name="radioval" id="r1" >
+					<label for="r1">Yes </label>
+					<br>
+		
+					<input type="radio" name="radioval" id="r2">
+					<label for="r2">No</label>
+				
+					<br><br>
+
+
+					<input type="submit" value="Send in questionnaire"  class="senda1" id="senda1">
+			
+				</fieldset>
+			</form>
+
+			 <!-- Upplýsingar um höfund í footer --> 
+			<footer>
+				<p>Site creator: Brynjólfur Sindri O´Shea</p>
+				<p>Email: brynjolfuroshea@gmail.com</p>
+				<p>Num: 8464783</p>
+				<p>Áfangi: VEFÞ1VG05AU</p>
+				<p>All material used is protected under fair use and copyright law.</p>
+				<p>Check out some of my other projects here -----> <a href="../../verkefni 6/index.html" target="_blank">Verkefni 6</a></p>
+
+			</footer>
+		</main>
+
+
+		<!-- Javascript kóði í script, function-ið er translate hnappurinn efst á síðu, gat ekki sett það í script.js skajlið af einhverjum ástæðum--> 
+		<script type="text/javascript">
+    		function googleTranslateElementInit() {
+  				new google.translate.TranslateElement(
+  					{pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 
+  					'google_translate_element'
+  				);
+			}  
+		</script>
+
+
+		<!-- tenging á javascript skrá og translate element af google trasnlate, komment kemur ekki fyrir aftur--> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>
