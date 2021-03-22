@@ -1,0 +1,167 @@
+body{background-color:#fff;color:#333;font-family:'Ubuntu', sans-serif;line-height:1.5}
+
+
+h1,h2,h3,h4,h5,a{color:#0B3E7A}
+
+a:visited{color:orangered}
+
+img{max-width:100%;height:auto}
+
+footer p{text-align:left}
+
+
+.asidemenu{list-style-type:none;padding:0;margin-top:5em}
+
+
+.asidemenu li{padding:.5em 0}.asidemenu span{color:orangered}.asidemenu a{color:#0B3E7A;text-decoration:none;padding:.5em 1em 0;margin:0}
+.asidemenu a:nth-child{background-color:#ddd}
+
+.midja small{padding-right:2em}
+
+.vinstri img{max-width:4em;height:auto}
+
+*,*:before,*:after{box-sizing:border-box}
+
+
+html{scroll-behavior:smooth}
+header{grid-area:header}
+main{grid-area:main}
+footer{grid-area:footer}
+article{grid-area:article}
+aside{grid-area:aside}
+.vinstri{grid-area:vinstri}
+.haegri{grid-area:haegri}
+.midja{grid-area:midja}
+.wrapper{display:grid;grid-gap:0;grid-template-areas:"header" "main" "footer";margin:0 1em 3em 1em}
+main{display:grid;grid-gap:0;grid-template-areas:"article" "aside"}
+
+
+
+
+header h1{font-family:'Ubuntu', sans-serif;font-weight:300;font-size:2em;text-align:left;margin:2.5em .5em .2em .5em}
+.midja h5,.midja small{display:none}
+
+
+@media screen and (min-width: 37.5em){
+
+	header h1{font-size:3em;text-align:center;margin:1.5em 0 .2em 0}
+	main{grid-template-areas:"aside article";grid-template-columns:1fr 2fr}
+	article{padding:.5em 1em}
+	aside{border-right:1px solid orangered;padding-right:1em}
+	.asidemenu{margin-top:0}
+	.mainarticle{margin-top:-2em}
+	}
+
+
+
+	@media screen and (min-width: 48em){
+
+		.midja h5,.midja small{display:block;margin-top:0}
+		main{grid-template-areas:"aside article";grid-template-columns:1fr 3fr}
+		article{padding:.5em 2em}
+		.mtop-2em{margin-top:-1.3em}
+		}
+
+
+		@media screen and (min-width: 60em){
+			.wrapper{max-width:60em;margin:0 auto}
+			
+
+			header h1{font-size:4em;text-align:center;margin:1.5em 0 .5em 0}
+			}
+
+
+
+img{
+	max-width:100%;height:auto}
+
+
+
+figure{margin:0}
+
+
+figure img{display:block;border:1px solid orange}
+
+
+@keyframes shake{
+	0%{
+		
+		transform:rotate(0deg)
+	}
+	50%{
+		
+		transform:rotate(0.3deg)
+	}
+	100%{
+	
+		transform:rotate(-0.6deg)
+	}
+}
+
+
+@keyframes svartur{
+	0%{
+		fill: #000000;
+	}
+	50%{
+		fill: #860606;
+	}
+	100%{
+		fill: #000000;
+	}
+}
+
+@keyframes rauður{
+	0%{
+		fill: #860606;
+	}
+	50%{
+		fill: #000000;
+	}
+	100%{
+		fill: #860606;
+	}
+}
+
+svg{
+	width:100%;
+	height:auto;
+	animation-name:shake;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+
+		
+
+}
+
+
+#t1{
+	width:100%;
+	height:auto;
+	animation-name:svartur;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-delay: 2s,2s,2s;
+
+		
+
+}
+
+
+#t2{
+	width:100%;
+	height:auto;
+	animation-name:rauður;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+
+}
+
+
+
+
