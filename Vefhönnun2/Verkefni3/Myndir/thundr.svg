@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+
+		<defs>
+
+			<path d="M216.69 179.54L169.99 352.93L216.69 352.93L183.33 478.15L310.09 304.76L243.38 304.76L290.08 179.54L216.69 179.54Z" id="bGkStOADC"></path>
+
+			<path d="M293.35 141.33L240.04 306.09L293.35 306.09L255.27 425.08L399.96 260.32L323.81 260.32L377.11 141.33L293.35 141.33Z" id="a3p6cJG5wh"></path>
+		</defs>
+
+		<g>
+			<g>
+				<g>
+					<use class="t1" xlink:href="#bGkStOADC" opacity="1" fill="#000000" fill-opacity="1"></use>
+
+					<g>
+						<use xlink:href="#bGkStOADC" opacity="1" fill-opacity="0" stroke="#860606" stroke-width="3" stroke-opacity="1"></use>
+					</g>
+
+				</g>
+
+				<g>
+					<use class="t2" xlink:href="#a3p6cJG5wh" opacity="1" fill="#860606" fill-opacity="1"></use>
+
+					<g>
+						<use xlink:href="#a3p6cJG5wh" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="3" stroke-opacity="1"></use>
+
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>
