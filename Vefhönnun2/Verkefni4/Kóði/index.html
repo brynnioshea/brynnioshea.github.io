@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tafla og Form</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>TAFLA OG FORM</h1>
+        </header>
+        
+        <div class="wrapper">
+            <main>
+
+            
+                <table>
+                    <caption>Tafla</caption>
+                    
+                    <thead>
+                        <tr class="gray"> 
+                            <th scope="col"></th>
+                            <th scope="col">A</th>
+                            <th scope="col">B</th>
+                            <th scope="col">C</th>
+                            <th scope="col">D</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td scope="row" data-label="A-Ö">E</td>
+                            <td data-label="A">Atli</td>
+                            <td data-label="B">Bára</td>
+                            <td data-label="C">Cesar</td>
+                            <td data-label="D">Dóra</td>
+                        </tr>
+                        
+                        <tr>
+                            <td scope="row" data-label="A-Ö">F</td>
+                            <td data-label="A">Atli</td>
+                            <td data-label="B">Bára</td>
+                            <td data-label="C">Cesar</td>
+                            <td data-label="D">Dóra</td>
+                        </tr>
+                        
+                        <tr>
+                            <td scope="row" data-label="A-Ö">G</td>
+                            <td data-label="A">Atli</td>
+                            <td data-label="B">Bára</td>
+                            <td data-label="C">Cesar</td>
+                            <td data-label="D">Dóra</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            
+
+                <div class="register">
+                    <form action="#" method="GET">
+                        <fieldset>
+                            
+                            <legend>Form</legend>
+                            
+                            <label>
+                                Nafn
+                                <input type="text" name="nafn" placeholder="Nafn" required="" autofocus="" title="Setja fullt nafn hér" /> 
+                            </label>
+                            
+                            <label>
+                                Símanúmer
+                                <input type="text" name="númer" placeholder="555 5555" title="Setja 7 stafa númer hér" required="" pattern="\d{3}(?:[\-\s]?)\d{4}" />
+                            </label>    
+                            
+                            <label>
+                                Tölvupóstur
+                                <input type="email" name="email" placeholder="Netfang" required="" title="Setja netfang hérna"/>
+                            </label>
+                        
+                            <label>
+                                Dagsetning
+                                <input type="date" name="dagsetning" required="" />
+                            </label>
+                            
+                            <br>
+                            
+                            <label>
+                                Lukku númer 
+                                <select name="Valkostur">
+                                    <option value="0" selected=""></option>
+                                    <option value="100">100</option>
+                                    <option value="200">101</option>
+                                    <option value="300">102</option>
+                                    <option value="400">103</option>
+                                    <option value="500">104</option>
+                                </select>
+                            </label>
+                            
+                            <br>
+                
+                            <label for="val1">
+                                Veldu rétt:
+                                <br>
+                                <input type="checkbox" name="val1" value="hérna" /> hérna eða 
+                                <input type="checkbox" name="val1" value="hérna2" /> hérna 
+                            </label> 
+                            
+                            <br>
+
+                            <label for="óviss">
+                                    Erfitt:
+                                    <input type="radio" name="óviss" value="rangt" /> ------->  
+                                    <input type="radio" name="óviss" value="rangt2" /> <------- 
+                            </label>
+                            
+                            <label>
+                                <br>
+                                Kvartanir 
+                                <textarea rows="3.5" name="textkassi"></textarea>
+                            </label>
+                            
+                            <div class="center">    
+                                <input type="submit" name="submit" value="Panta"/>
+                            </div>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        
+            <footer>
+                <p>Þetta er footer texti</p>
+            </footer>
+        </div>
+    </body>
+</html>
