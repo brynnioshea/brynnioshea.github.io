@@ -129,7 +129,7 @@
               		<br>
               	
               	<dt>Hlutverk:</dt>
-              		<dd>Myndbandsgerð, myndbands-upptaka, ljósmyndari, klipping, hljóðupptaka, keyrsla, kaka</dd>
+              		<dd>Myndbandsgerð, myndbands-upptaka, mynda-upptaka, klipping, hljóðupptaka, keyrsla, kaka</dd>
               	</div>
               </div>
               			
@@ -145,10 +145,108 @@
         <br>
         <br>
 
+        <div>
+          
+          <table>
+                    <caption>Tafla</caption>
+                    
+                    <thead>
+                        <tr class="gray"> 
+                            <th scope="col"></th>
+                            <th scope="col">0%</th>
+                            <th scope="col">25%</th>
+                            <th scope="col">50%</th>
+                            <th scope="col">75%</th>
+                            <th scope="col">100%</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td scope="row" data-label="A-Ö">1</td>
+                            <td data-label="1">Bynni</td>
+                            <td data-label="2">Kacp</td>
+                            <td data-label="3">Axel</td>
+                            <td data-label="4">Krist</td>
+                            <td data-label="5">Blank</td>
+                        </tr>
+                        
+                        <tr>
+                            <td scope="row" data-label="A-Ö">2</td>
+                            <td data-label="1">Axel</td>
+                            <td data-label="2">Blank</td>
+                            <td data-label="3">Krist</td>
+                            <td data-label="4">Bynni</td>
+                            <td data-label="5">Kacp</td>
+                        </tr>
+                        
+                        <tr>
+                            <td scope="row" data-label="A-Ö">3</td>
+                            <td data-label="1">Krist</td>
+                            <td data-label="2">Bynni</td>
+                            <td data-label="3">Kacp</td>
+                            <td data-label="4">Blank</td>
+                            <td data-label="5">Axel</td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row" data-label="A-Ö">4</td>
+                            <td data-label="1">Krist</td>
+                            <td data-label="2">Kacp</td>
+                            <td data-label="3">Axel</td>
+                            <td data-label="4">Blank</td>
+                            <td data-label="5">Bynni</td>
+                        </tr>
+                    </tbody>
+                </table>  
+        </div>
+
+
+        <div class="register">
+                    <form action="#" method="GET">
+                        <fieldset>
+                            
+                            <legend>Form</legend>
+                            
+                            <label>
+                                Nafn
+                                <input type="text" name="nafn" placeholder="Nafn" required=""  title="Setja fullt nafn hér" /> 
+                            </label>
+                            
+                            <label>
+                                Símanúmer
+                                <input type="text" name="númer" placeholder="555 5555" title="Setja 7 stafa númer hér" required="" pattern="\d{3}(?:[\-\s]?)\d{4}" />
+                            </label>    
+                            
+                            <label>
+                                Tölvupóstur
+                                <input type="email" name="email" placeholder="Netfang" required="" title="Setja netfang hérna"/>
+                            </label>
+                        
+                            <label>
+                                Dagsetning
+                                <input type="date" name="dagsetning" required="" />
+                            </label>
+                            
+                            <br>
+                            
+                            
+                                <br>
+                                Athugasemdir:
+                                <textarea rows="3.5" name="textkassi"></textarea>
+                            </label>
+                            
+                            <div class="center">    
+                                <input type="submit" name="submit" value="Panta"/>
+                            </div>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+
         <footer>
 
-            
-
+    
     
         </footer>
     
