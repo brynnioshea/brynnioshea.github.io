@@ -9,6 +9,171 @@ body {
 
 }
 
+.logomynd{
+    text-align: center;
+    margin-top: -1em;
+    margin-left: 1em;
+}
+
+.logomynd svg {
+    
+    width: 8.5em;
+    height: 9em;
+}
+
+.t1{
+    width:100%;
+    height:auto;
+    animation-name:svartur;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 2s,2s,2s;   
+
+}
+
+
+.t2{
+    width:100%;
+    height:auto;
+    animation-name:rauður;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    
+}
+
+
+@keyframes svartur{
+    0%{
+        fill: #000000;
+    }
+    50%{
+        fill: #860606;
+    }
+    100%{
+        fill: #000000;
+    }
+}
+
+@keyframes rauður{
+    0%{
+        fill: #860606;
+    }
+    50%{
+        fill: #000000;
+    }
+    100%{
+        fill: #860606;
+    }
+}
+
+table{
+  border:1px solid black;
+  border-collapse:collapse;
+  margin:0;
+  padding:0;
+  width:100%;
+  table-layout:fixed;
+}
+
+
+table caption{
+  font-size:1.5em;
+  margin:.5em 0 .75em;
+}
+
+table tr{
+  
+  border:1px solid #bbb;
+  padding:.35em;
+}
+
+table th,table td{
+  padding:.625em;
+}
+
+table th{
+  font-size:.85em;
+  letter-spacing:.1em;
+  text-transform:
+  uppercase;
+  text-align:left; 
+  text-indent: 1em;}
+
+tbody tr:nth-child(even){
+  background:lightgray;
+}
+
+
+
+.register form{
+  margin-bottom:1em
+}
+
+.register legend{
+  font-weight:bold
+}
+
+.register fieldset{
+  border:1px solid #aaa;
+  border-radius:.5em;
+  padding:1em;
+  margin:1em 0;
+}
+.register label{
+  color:firebrick;
+  cursor:pointer;
+  font-weight:400
+}
+
+.register input,.register select,.register textarea{
+  border:1px solid #c6c9cc;
+  border-radius:5px;
+  color:#444;
+  display:inline;
+  margin:5px 0 1em 0;
+  padding:5px 8px;
+}
+
+.register select{
+  height:2em;
+  width:5em;
+}
+
+.register input[type=text],.register input[type=tel],.register input[type=email],.register textarea{
+  width:100%;
+}
+
+.register textarea{
+  font-family:Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.center{
+  text-align: center;
+  
+} 
+ 
+
+.register input[type=submit]{
+  background-color:white;
+  color:black;
+  cursor:pointer;
+  font-size:1.2em;
+  padding: 0.5em;
+  margin-left: auto;
+  border: 0.5px solid black;
+  border-radius:8px;
+  
+    
+}
+
+
+.register input[type=submit]:hover,.register input[type=submit]:active{
+  background-color: black;
+  color:white;
+}
 #saga-html{
   background: linear-gradient(98deg, #755500, #876005, #806320, #916f13, #8c743c, #877855, #7d7563, #78756d);
   background-size: 1000% 200%;
@@ -111,9 +276,11 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 100px;
+      
 }
-
+.topmargin1 {
+    margin-top: -1em;
+}
 nav ul li a {
     text-decoration: none;
     display: block;
@@ -143,6 +310,9 @@ nav ul li a {
     padding-left: 10px;
     padding-top: 10px; 
 }
+
+
+
 #google_translate_element{
     padding-left: 38px;
 
@@ -397,14 +567,62 @@ ol li{
     padding-left: 2em;
     padding-bottom: 1em;
     max-width: 70%;
-    
-    
+   } 
 
+.gray{
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 37.5em){
+ 
+  
+
+  table{
+    border:0
   }
+  table caption{
+    font-size:1.3em
+  }
+  table thead{
+    display:none;
+  }
+  table tr{
+    border-bottom:3px solid #c9c9c9;
+    display:block;
+    margin-bottom:.625em;
+  }
+  table td{
+    border-bottom:1px solid #c9c9c9;
+    display:block;
+    font-size:.8em;
+    text-align:right;
+  }
+  table td:before{
+    content:attr(data-label);
+    float:left;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+  table td:last-child{
+    border-bottom:none;
+  }
+
+ 
+
+
+}
 
 
 
 @media screen and (min-width: 48em){
+
+  .register form{
+    max-width:35em;
+  }
+  .register fieldset{
+    padding:1em 2em;
+  }
+
 
 
 	header{
@@ -556,4 +774,5 @@ ol li{
 
  
 
+        
         
